@@ -9,7 +9,7 @@ const dbConnect = () => {
   .then(() => console.log("DB connected successfully"))
   .catch((error) => {
     console.error('DB connection error:', error.message);
-    process.exit(1); // Move this line inside the catch block
+    process.exit(1); // Exit the application only on database connection error
   });
 };
 
