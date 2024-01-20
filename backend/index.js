@@ -33,5 +33,5 @@ app.listen(PORT, () => {
 
 // Default route
 app.get("/", (req, res) => {
-  res.send("This is HOMEPAGE");
+  res.json({ message: "This is HOMEPAGE" });
 });
