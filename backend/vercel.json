@@ -1,5 +1,10 @@
 {
   "version": 2,
+  "functions": {
+    "myFunction": {
+      "maxDuration": 30
+    }
+  }
   "name": "backend",
   "builds": [
     {
