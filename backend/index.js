@@ -16,7 +16,7 @@ app.use(cors({
 app.use(express.json());
 
 // Use the contact route
-app.use('/save', contactRoutes);
+app.use('/', contactRoutes);
 
 // Generic error handler middleware
 app.use((err, req, res, next) => {
@@ -32,6 +32,6 @@ app.listen(PORT, () => {
 });
 
 // Default route
-app.get("/", (req, res) => {
+app.get("/save", (req, res) => {
   res.send("This is HOMEPAGE");
 });
