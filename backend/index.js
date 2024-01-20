@@ -25,7 +25,7 @@ app.use((err, req, res, next) => {
 });
 
 // Start the server
-const PORT = process.env.PORT ;
+const PORT = process.env.PORT || 3000 ;
 dbConnect(); // Connect to the database
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
