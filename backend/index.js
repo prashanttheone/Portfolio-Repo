@@ -16,16 +16,16 @@ app.use(cors({
 app.use(express.json());
 
 // Use the contact route
-app.use('/contact', contactRoutes);
+app.use('/save', contactRoutes);
 
 // Generic error handler middleware
-app.use((err, req, res,next) => {
+app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send('Something went wrong!');
 });
 
 // Start the server
-const PORT = process.env.PORT || 3000 ;
+const PORT = process.env.PORT ;
 dbConnect(); // Connect to the database
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
@@ -33,5 +33,5 @@ app.listen(PORT, () => {
 
 // Default route
 app.get("/", (req, res) => {
-  res.json({ message: "This is HOMEPAGE" });
+  res.send("This is HOMEPAGE");
 });
