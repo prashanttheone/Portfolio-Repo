@@ -4,6 +4,6 @@ const { saveContact } = require('../controllers/saveContact');
 
 
 // POST route for form submission
-router.post('/', saveContact);
+router.post('/cat', saveContact);
 
 module.exports = router;
