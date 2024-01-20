@@ -8,7 +8,7 @@ const dbConnect = require('./config/database');
 
 // Enable CORS for all origins during development
 app.use(cors({
-  origin: "https://portfoliofrontend-two.vercel.app",
+  origin: "https://prashant-tau.vercel.app",
   credentials: true
 }));
 
