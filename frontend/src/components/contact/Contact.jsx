@@ -16,7 +16,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/contact/save', formData, {
+      const response = await axios.post('https://backend-sable-two.vercel.app/contact/save', formData, {
   withCredentials: true,}); 
   console.log('Success:', response.data);
       setMessage(true); // Set message state to display success message
