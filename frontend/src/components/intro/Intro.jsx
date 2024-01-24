@@ -29,15 +29,10 @@ const Intro = () => {
             </article>
           </div>
           <p>
-            I’ve spent the last several months in a remote environment, working
-            with HTML, CSS, JavaScript, building everything from landing pages
-            to APIs. My experience as a teacher in an international school
-            helped me collaborate with fellow developers from all over the
-            world. Additionally, working with kids isn’t an easy task, however,
-            it has helped me become efficient, productive, and fast even in a
-            very stressful environment, which is an important skill in the tech
-            industry.
-          </p>
+           Hello, I'm  a skilled MERN stack developer. With expertise in MongoDB, Express.js, React.js, and Node.js,
+            I craft scalable solutions with clean, maintainable code. Having spent several months on hands-on projects,
+            I bring a wealth of practical experience. From e-commerce to dynamic UIs, my work reflects a commitment to innovation and quality.
+            Let's build something incredible together! Explore my portfolio, and let's turn ideas into reality.</p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>
