@@ -31,7 +31,7 @@ const Portfolio = () => {
       id: 3,
       title: 'Food Order App',
       img: IMG5,
-      description: 'Foodie Order App is a user-friendly platform for ordering meals, designed with modern technology to ensure a seamless experience. It uses Firebase Authentication for secure user sign-in and a reliable payment gateway for easy transactions. Redux efficiently manages the app's state for smooth performance. With Foodie Order App, ordering your favorite food is simple, secure, and convenient.',
+      description: 'Foodie Order App is a user-friendly platform for ordering meals, designed with modern technology to ensure a seamless experience. It uses Firebase Authentication for secure user sign-in and a reliable payment gateway for easy transactions. Redux efficiently manages the apps state for smooth performance. With Foodie Order App, ordering your favorite food is simple, secure, and convenient.',
       technologies: 'React, Firebase,Redux',
       link: 'https://zomato-vert.vercel.app/',
       github: 'https://github.com/prashanttheone/zomato',
