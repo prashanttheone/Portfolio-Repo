@@ -20,19 +20,22 @@ const Intro = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>6months+</small>
+              <small>2+ Years</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>10+ Completed Projects</small>
+              <small>15+ Completed Projects</small>
             </article>
           </div>
           <p>
-           Hello, I'm  a skilled MERN stack developer. With expertise in MongoDB, Express.js, React.js, and Node.js,
-            I craft scalable solutions with clean, maintainable code. Having spent several months on hands-on projects,
-            I bring a wealth of practical experience. From e-commerce to dynamic UIs, my work reflects a commitment to innovation and quality.
-            Let's build something incredible together! Explore my portfolio, and let's turn ideas into reality.</p>
+            Hello, I'm Prashant Kumar, a dedicated Full-Stack and React Native Developer with over 2 years of professional experience in building high-performance web and mobile applications. 
+            I specialize in creating complex ecosystems like **Aurali**, an AI-driven conversational platform that connects users with professionals, and **Edusparsh**, a comprehensive School ERP system managing academic and administrative workflows.
+          </p>
+          <p>
+            My portfolio also includes **Fasstays**, a robust flight and hotel booking platform designed for seamless travel management. With a strong foundation in the MERN stack, Next.js, and PostgreSQL, I focus on delivering scalable, user-centric solutions. 
+            Whether it's developing AI-powered chat interfaces or transaction-safe ERP modules, I am passionate about turning innovative ideas into reality through clean and maintainable code.
+          </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>

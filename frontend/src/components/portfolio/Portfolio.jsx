@@ -1,40 +1,62 @@
 import React from 'react';
-import IMG1 from '../../assets/movix.jpg';
+import IMG1 from '../../assets/fastays.png';
+import IMG2 from '../../assets/aurali.png';
+import IMG3 from '../../assets/edusparsh.png';
 import IMG4 from '../../assets/cal.jpg';
 import IMG5 from '../../assets/food delivery.jpg';
+import IMG6 from '../../assets/todo.png';
 
 import './portfolio.css';
 
 const Portfolio = () => {
-  const soloProjects = [
+  const webProjects = [
     {
       id: 1,
-      title: 'Movix',
-      img: IMG1,
+      title: 'Aurali — AI Chat Platform',
+      img: IMG2,
       description:
-        'Frontend Development: Led the development of the frontend using React and Redux, ensuring a responsive and user-friendly interface for seamless navigation.\n\nAPI Integration: Successfully integrated the TMBD API, allowing Movix to dynamically fetch and display up-to-date movie information, including details and trailers.',
-      technologies: 'React, API | SCSS',
-      link: 'https://movix-chi-three.vercel.app/',
-      github: 'https://github.com/prashanttheone/MOVIX',
+        'A sophisticated AI chat application where users and professionals interact via an LLM-driven engine (Gemini). The system understands core user needs to recommend the best-matched professionals for consultations. Includes appointment booking and secure payment gateway integration.',
+      technologies: 'React, Node.js, Gemini AI, Firebase',
+      link: 'http://staging.aurali.co/',
     },
     {
       id: 2,
-      title: 'Calculator',
-      img: IMG4,
+      title: 'Edusparsh — School ERP',
+      img: IMG3,
       description:
-        'Developed a dynamic calculator using JavaScript, providing users with a seamless and efficient tool for basic arithmetic operations. The calculator features a clean and intuitive user interface, allowing for easy input and displaying accurate results in real-time. This project showcases my proficiency in JavaScript for creating interactive and functional web applications.',
-      technologies: 'JavaScript | HTML CSS',
-      link: 'https://a75fddf0-787e-4675-8d9b-efbdb192d51a-00-3avh3tg442zkl.kirk.replit.dev/',
-      github: '#',
+        'A comprehensive School ERP software managing CMS, student onboarding, teacher workflows, exam scheduling, and fee management. Features a robust dashboard for centralized school administration and real-time data tracking.',
+      technologies: 'Next.js, PostgreSQL, Prisma, Node.js',
+      link: 'https://www.edusparsh.com/',
     },
     {
       id: 3,
-      title: 'Food Order App',
-      img: IMG5,
-      description: 'Foodie Order App is a user-friendly platform for ordering meals, designed with modern technology to ensure a seamless experience. It uses Firebase Authentication for secure user sign-in and a reliable payment gateway for easy transactions. Redux efficiently manages the apps state for smooth performance. With Foodie Order App, ordering your favorite food is simple, secure, and convenient.',
-      technologies: 'React, Firebase,Redux',
-      link: 'https://zomato-vert.vercel.app/',
-      github: 'https://github.com/prashanttheone/zomato',
+      title: 'Fasstays — Flight & Hotel Booking',
+      img: IMG1,
+      description:
+        'A full-scale travel platform similar to MMT, facilitating seamless flight and hotel bookings along with curated tour packages. Features optimized search algorithms and dynamic API integrations for real-time travel management.',
+      technologies: 'React, Redux, REST APIs, Tailwind CSS',
+      link: 'https://prod.fastays.com/',
+    },
+  ];
+
+  const androidProjects = [
+    {
+      id: 1,
+      title: 'Fasstays — Flight & Hotel Booking',
+       img: IMG1,
+      description:
+        'A high-performance Android application for the Fasstays travel platform. Features real-time flight and hotel search, secure booking flows, and integrated tour package management for a seamless native travel experience.',
+      technologies: 'React Native, Redux, REST APIs, NativeWind',
+      link: 'https://play.google.com/store/apps/details?id=com.fastays',
+    },
+    {
+      id: 2,
+      title: 'Edusparsh Mobile ERP',
+      img: IMG3,
+      description:
+        'A high-performance Android application for the Edusparsh ecosystem. Provides students and teachers with instant access to attendance, academic records, and fee payments with offline caching and NativeWind UI.',
+      technologies: 'React Native, NativeWind, PostgreSQL, REST APIs',
+      link: 'https://play.google.com/store/apps/details?id=com.maitretech.eduSparsh'
     },
   ];
 
@@ -43,37 +65,58 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
-      <div className="container portfolio__container">
-        {soloProjects.map((pro) => (
-          <article className="portfolio__item" key={pro.id}>
-            <div className="portfolio__item-image">
-              <img src={pro.img} alt={pro.title} />
-            </div>
-            <div className="portfolio__item-content">
-              <h3>{pro.title}</h3>
-              <p>{pro.description}</p>
-              <p>{pro.technologies}</p>
-            </div>
-            <div className="portfolio__item-cta">
-              <a
-                href={pro.github}
-                target="_blank"
-                className="btn"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
-              <a
-                href={pro.link}
-                target="_blank"
-                className="btn btn-primary"
-                rel="noreferrer"
-              >
-                Visit Website
-              </a>
-            </div>
-          </article>
-        ))}
+      <div className="container">
+        <h3 className="portfolio__category-title">Web Applications</h3>
+        <div className="portfolio__container">
+          {webProjects.map((pro) => (
+            <article className="portfolio__item" key={pro.id}>
+              <div className="portfolio__item-image">
+                <img src={pro.img} alt={pro.title} />
+              </div>
+              <div className="portfolio__item-content">
+                <h3>{pro.title}</h3>
+                <p>{pro.description}</p>
+                <p><strong>Tech:</strong> {pro.technologies}</p>
+              </div>
+              <div className="portfolio__item-cta">
+                <a
+                  href={pro.link}
+                  target="_blank"
+                  className="btn btn-primary"
+                  rel="noreferrer"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <h3 className="portfolio__category-title">Android Applications</h3>
+        <div className="portfolio__container">
+          {androidProjects.map((pro) => (
+            <article className="portfolio__item" key={pro.id}>
+              <div className="portfolio__item-image">
+                <img src={pro.img} alt={pro.title} />
+              </div>
+              <div className="portfolio__item-content">
+                <h3>{pro.title}</h3>
+                <p>{pro.description}</p>
+                <p><strong>Tech:</strong> {pro.technologies}</p>
+              </div>
+              <div className="portfolio__item-cta">
+                <a
+                  href={pro.link}
+                  target="_blank"
+                  className="btn btn-primary"
+                  rel="noreferrer"
+                >
+                  VIEW ON PLAY STORE
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

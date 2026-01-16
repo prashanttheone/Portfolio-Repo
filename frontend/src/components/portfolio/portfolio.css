@@ -2,6 +2,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.portfolio__category-title {
+    text-align: center;
+    margin: 3rem 0 2rem;
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .portfolio__item {
@@ -10,6 +20,8 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio__item:hover {
@@ -20,26 +32,26 @@
 .portfolio__item-image {
     border-radius: 1.5rem;
     overflow: hidden;
-    height: 30%;
 }
 
 .portfolio__item h3 {
-    margin: 2rem 0;
+    margin: 1.5rem 0 1rem;
 }
 
 .portfolio__item p {
-    margin: 0 0 1.2rem 0;
+    margin: 0 0 1rem 0;
     font-size: 0.9rem;
 }
 
 .portfolio__item-cta {
     display: flex;
     gap: 1rem;
-    margin-bottom: 2rem; 
+    margin-top: auto;
+    padding-bottom: 1rem;
 }
 
 .portfolio__item-content {
-    height: 50%;
+    flex-grow: 1;
 }
 
 @media screen and (max-width: 1024px){
